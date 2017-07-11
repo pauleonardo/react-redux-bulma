@@ -5,6 +5,8 @@ import { Router, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
 import { syncHistoryWithStore } from 'react-router-redux';
 
+import 'bulma/css/bulma.css'
+
 import routes from './routes';
 import configureStore from './store/configureStore';
 import intialState from './reducers/initialState';

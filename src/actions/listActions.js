@@ -22,7 +22,7 @@ function fetchListFailure(error){
 export function fetchList(){
 
     return async (dispatch) => {
-      
+
       dispatch( () => {
         return{
           type: FETCH_LIST_INIT
@@ -30,7 +30,8 @@ export function fetchList(){
       })
 
       try {
-        const data = await fetch('../assets/members.json')
+        const res = await fetch('../assets/members.json');
+        const data = await res.json();
         dispatch(fetchListSuccess(data))
       }
       catch (error) {
