@@ -7,6 +7,7 @@ const initialState = {
   viewDetail:{
     loading:false,
     error:null,
+    id:'',
     name:'',
     email:'',
     users:[]
